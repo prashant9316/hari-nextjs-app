@@ -16,9 +16,9 @@ export default function ProductGrid() {
             <h3 className="text-lg font-medium text-gray-800">
               Product {index + 1}
             </h3>
-            <p className="text-gray-600">High-quality electronic product.</p>
+            <p className="text-gray-600">High-quality product.</p>
             <div className="mt-2 flex justify-between items-center">
-              <span className="text-blue-600 font-semibold">$99.99</span>
+              <span className="text-blue-600 font-semibold">₹1439/-</span>
               <button className="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-500">
                 Buy Now
               </button>
