@@ -1,6 +1,17 @@
+"use client";
+
+import React from "react";
+import { motion } from "framer-motion";
+
 export default function ProductGrid() {
   return (
-    <section className="mt-10">
+    <motion.section
+      className="mt-10"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      //   className="bg-white p-6 rounded-lg shadow-lg"
+    >
       <h2 className="text-2xl font-semibold text-gray-800 mb-6">Electronics</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {[...Array(8)].map((_, index) => (
@@ -26,6 +37,6 @@ export default function ProductGrid() {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }
